@@ -1,12 +1,12 @@
 <?php
 
-define( 'BASE_URL', '/personal-projects/php-framework/' );
+define( 'BASE_URL', '/personal-projects/php-skeleton/' );
 
 use Core\App as App;
-use DB\QueryBuilder as QueryBuilder;
+use DB\Database as Database;
 use DB\Connection as Connection;
 
 App::set('config', require 'db/config.php');
-App::set('database', new QueryBuilder(
+App::set('database', new Database(
 	Connection::create( App::get('config')['database'] )
 ));

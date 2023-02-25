@@ -19,13 +19,21 @@ class PostController {
 	}
 
 	public function post() {
-		$values = [
+		$data = [
 			'title' => $_POST['title'],
 			'body' => $_POST['body'],
 		];
 
-		$result = App::get('database')->insert('posts', $values);
+		$result = App::get('database')->create('posts', $data);
 
 		header('Location:' . BASE_URL . 'posts');
+	}
+
+	public function update($id) {
+		$data = [
+			'body' => $_POST['body']
+		];
+
+		$result = App::get('database')->update('posts', $id, $data);
 	}
 }

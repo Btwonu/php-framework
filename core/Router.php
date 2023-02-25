@@ -1,8 +1,6 @@
 <?php 
 
 namespace Core;
-use Controllers\PostController;
-// use Controllers\PageController;
 
 class Router {
 	protected $routes = [
@@ -31,8 +29,6 @@ class Router {
 	}
 
 	public function map_uri($uri, $method) {
-		// $path = trim( parse_url($uri, PHP_URL_PATH), '/' );
-
 		if (! array_key_exists($uri, $this->routes[$method]) ) {
 			return view('404');
 		}
