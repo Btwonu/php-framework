@@ -4,6 +4,7 @@
 
 ## File structure
 
+```
 php-framework:
 │   .gitignore
 │   .htaccess
@@ -48,6 +49,7 @@ php-framework:
         contact.view.php
         index.view.php
         posts.view.php
+```
 
 ---
 
