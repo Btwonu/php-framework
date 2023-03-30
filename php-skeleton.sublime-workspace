@@ -75,6 +75,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "bootstrap.php",
+			"settings":
+			{
+				"buffer_size": 275,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "db/config.php",
+			"settings":
+			{
+				"buffer_size": 407,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/Connection.php",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -208,10 +234,15 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Server/personal-projects/php-framework-clone"
+		"/D/Server/etc/php-framework",
+		"/D/Server/etc/php-framework/db"
 	],
 	"file_history":
 	[
+		"/D/Server/etc/php-framework/index.php",
+		"/D/Server/etc/php-framework/db/example-config.php",
+		"/D/Server/etc/php-framework/db/config.php",
+		"/D/Server/etc/php-framework/core/App.php",
 		"/D/Server/personal-projects/projects-db/public/index.php",
 		"/D/Server/personal-projects/projects-db/.gitignore",
 		"/D/Server/personal-projects/projects-db/db/config.php",
@@ -335,21 +366,18 @@
 		"/D/Server/st8mnt/nashville-classical-charter-school/wordpress/wp-content/themes/nashville-classical-charter-school/resources/scss/components/_footer.scss",
 		"/D/Server/st8mnt/nashville-classical-charter-school/wordpress/wp-content/themes/nashville-classical-charter-school/resources/scss/components/_main.scss",
 		"/D/Server/st8mnt/nashville-classical-charter-school/wordpress/wp-content/themes/nashville-classical-charter-school/resources/scss/components/_background-grid.scss",
-		"/D/Server/st8mnt/nashville-classical-charter-school/wordpress/wp-content/themes/nashville-classical-charter-school/resources/scss/components/_list-contacts.scss",
-		"/C/Users/user/Desktop/asd.svg",
-		"/D/Server/jwalden/identity-defined-security-alliance/wordpress/wp-content/themes/identity-defined-security-alliance/resources/scss/components/_cards.scss",
-		"/D/Server/jwalden/identity-defined-security-alliance/wordpress/wp-content/themes/identity-defined-security-alliance/resources/scss/components/_section-donate.scss",
-		"/D/Server/jwalden/identity-defined-security-alliance/wordpress/wp-content/themes/identity-defined-security-alliance/resources/scss/components/_percent.scss"
+		"/D/Server/st8mnt/nashville-classical-charter-school/wordpress/wp-content/themes/nashville-classical-charter-school/resources/scss/components/_list-contacts.scss"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
 		"height": 102.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -357,6 +385,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/personal-projects/php-skeleton/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -374,8 +403,95 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "bootstrap.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "db/config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "db/Connection.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -427,6 +543,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"connecti",
+				"db\\Connection.php"
+			],
 			[
 				"page-builder",
 				"wordpress\\wp-content\\themes\\monde-redesign\\templates\\page-builder.php"
@@ -934,10 +1054,6 @@
 			[
 				"hero.scs",
 				"src\\assets\\scss\\components\\_hero.scss"
-			],
-			[
-				"variables.scss",
-				"src\\assets\\scss\\generic\\_variables.scss"
 			]
 		],
 		"width": 0.0
@@ -945,9 +1061,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "integra",
 		"selected_items":
 		[
+			[
+				"integra",
+				"D:\\Server\\wp-backend-school-integration-task\\integration.sublime-project"
+			],
 			[
 				"wp-recipe",
 				"D:\\Server\\personal-projects\\wp-recipes\\wp-recipes.sublime-workspace"

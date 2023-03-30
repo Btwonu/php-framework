@@ -3,6 +3,7 @@
 require 'vendor/autoload.php';
 require 'bootstrap.php';
 
+use Core\Container;
 use Core\Router;
 
 Router::load('routes.php')
@@ -13,3 +14,8 @@ function view($name, $ctx = []) {
 
 	require("views/{$name}.view.php");
 }
+
+$c = new Container;
+echo '<pre>';
+	die(var_dump( $c->get('single') ));
+echo '</pre>';

@@ -14,6 +14,21 @@ class Database {
 		$this->pdo = $pdo;
 	}
 
+	public function seed() {
+		$sql = "CREATE TABLE `posts` (
+			`id` INT(11) NOT NULL AUTO_INCREMENT,
+			`title` VARCHAR(255) NOT NULL,
+			`body` TEXT NOT NULL,
+			`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+			PRIMARY KEY (`id`)
+		  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
+
+		  $stmt = $this->pdo->prepare($sql);
+		  $stmt->execute();
+
+		  return 'done';
+	}
+
 	public function getAll($table) {
 		$this->validateTableName($table);
 
@@ -52,7 +67,7 @@ class Database {
 		$stmt = $this->pdo->prepare($sql);
 
 		foreach ($data as $key => $value) {
-			$stmt->bindParam(":$key", $value);
+			$stmt->bindValue(":$key", $value);
 		}
 
 		$stmt->execute();

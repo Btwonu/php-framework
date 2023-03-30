@@ -3,7 +3,7 @@
 namespace DB;
 
 class Connection {
-	public static function create($config) {
+	public static function create(array $config) {
 		extract($config);
 
 		$dsn = "mysql:host=$host;dbname=$db;charset=UTF8";

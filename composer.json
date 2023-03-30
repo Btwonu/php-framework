@@ -6,5 +6,8 @@
 			"Controllers\\": "controllers/",
 			"Models\\": "models/"
 		}
+	},
+	"require": {
+		"psr/container": "^2.0"
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-define( 'BASE_URL', '/personal-projects/php-skeleton/' );
+define( 'BASE_URL', '/etc/php-framework/' );
 
 use Core\App as App;
 use DB\Database as Database;
