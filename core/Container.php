@@ -40,7 +40,7 @@ class Container implements ContainerInterface {
      * @return bool
      */
     public function has(string $id): bool {
-		return false;
+		return null !== $this->entries[$id];
 	}
 
 	public function set(string $id, callable $concrete): void {

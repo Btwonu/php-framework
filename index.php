@@ -15,7 +15,38 @@ function view($name, $ctx = []) {
 	require("views/{$name}.view.php");
 }
 
-$c = new Container;
+class Property {
+	public $seeMe = 'Hello';
+}
+
+class Test {
+	protected Property $property;
+
+	public function __construct(Property $property) {
+		$this->property = $property;
+	}
+
+	public function getProperty() {
+		return $this->property;
+	}
+}
+
+// $test = new Test(
+// 	new Property()
+// );
+
+// echo '<pre>';
+// 	die(var_dump( $test->getProperty() ));
+// echo '</pre>';
+
+$container = new Container;
+
+$container->set( Test::class, function($c) {
+	return new Test(
+		new Property()
+	);
+} );
+
 echo '<pre>';
-	die(var_dump( $c->get('single') ));
+	die(var_dump( $container->get( Test::class )->getProperty()));
 echo '</pre>';
